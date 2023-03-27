@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: finance
+
+logging:
+  level:
+    root: info
+
+mapping:
+  filename: 主营收入成本明细账.xls
+  projects: 801073, 801083, 801088
+  incomeSheet: 2022年主营收入明细账
+  costSheet: 2022年主营成本明细账
+  incomeCols:
+    - from: 日期
+      to: 日期
+    - from: 单位
+      to: 单位
+    - from: 项目编号
+      to: 项目编号
+    - from: 内容
+      to: 内容
+    - from: 开票金额（含税）
+      to: 开票金额（含税）
+    - from: 营业收入
+      to: 营业收入
+    - from: 税率
+      to: 税率
+    - from: 项目负责人
+      to: 项目负责人
+  costCols:
+    - from: 日期
+      to: 日期
+    - from: 购货单位
+      to: 购货单位
+    - from: 项目编号
+      to: 项目编号
+    - from: 内容
+      to: 内容
+    - from: 发票金额（含税）
+      to: 发票金额（含税）
+    - from: 营业成本
+      to: 营业成本
+    - from: 税率
+      to: 税率
+    - from: 项目负责人
+      to: 项目负责人

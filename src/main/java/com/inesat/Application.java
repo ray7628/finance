@@ -51,7 +51,7 @@ public class Application {
                         try (OutputStream fileOut = new FileOutputStream(file)) {
                             wbOutput.write(fileOut);   //将workbook写入文件流
                         }
-                        log.info("file write to : {}", file.getAbsolutePath());
+                        log.info("write file to : {}", file.getAbsolutePath());
                     }
 
 
@@ -61,7 +61,7 @@ public class Application {
             } catch (Exception e) {
                 log.error(e);
                 int b = System.in.read();
-                log.debug("input byte {} ", b);
+                log.debug("closing apps after input byte {} ", b);
             }
         };
     }
